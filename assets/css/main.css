@@ -1711,7 +1711,8 @@ input[type="button"],
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
-    flex-grow: 1; }
+    flex-grow: 1;
+    text-align: left; }
     #header > nav ul {
       list-style: none;
       margin: 0;
@@ -1729,12 +1730,17 @@ input[type="button"],
           color: #ffffff !important;
           display: block;
           padding: 0.85em 0;
+          padding-left: 15%;
           text-decoration: none; }
           #header > nav ul li a.active {
             background: #fff;
             color: #cb747c !important; }
-        #header > nav ul li:first-child {
-          border-top: 0; }
+        #header > nav ul li li {
+          font-size: 85%; }
+          #header > nav ul li li a {
+            padding-left: 25%; }
+    #header > nav > ul > li:first-child {
+      border-top: 0; }
 
 /* Wrapper */
 #wrapper {
