@@ -80,9 +80,12 @@
 				})
 				.each(function() {
 
+					var url_exclusion_list = ["https://forms.gle/5ubn9r4auj7psisR8"]
 					var	$this = $(this),
-						id = $this.attr('href'),
-						$section = $(id);
+						id = $this.attr('href');
+					if (url_exclusion_list.includes(id))
+						return;
+					var	$section = $(id);
 
 					// No section for this link? Bail.
 						if ($section.length < 1)
