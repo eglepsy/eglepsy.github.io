@@ -47,7 +47,6 @@
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="tel:+31640852197" class="icon fa-phone"><span class="label">Telephone</span></a></li>
 						<li><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#00058;&#105;&#110;&#102;&#x6f;&#x40;&#x65;&#103;&#x6c;&#x65;&#x70;&#x73;&#000121;&#46;&#x77;&#111;&#114;&#000108;&#100;" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						<li><a href="https://www.facebook.com/ENpsychologist/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
@@ -64,19 +63,6 @@
 							<section id="home">
 								<div class="image main" data-position="center">
 									<img src="images/banner-01.jpg" alt="" style="object-position: 50% 70%"/>
-								</div>
-
-								<div class="banner" style="padding:15px; text-align:center; background:#ff505e; color:#000; margin: 1em 0 0 0">
-									<style>
-										div.banner * {
-										    color: #000;
-										    margin: 0;
-										}
-									</style>
-									<div class="banner-content">
-										<p>Due to COVID-19, all consultations are held <b>online</b>.</p>
-										<p>To register on the waiting list (waiting time ≅ 3 months), <a href="https://forms.gle/5ubn9r4auj7psisR8"><b>fill the form</b></a>.</p>
-									</div>
 								</div>
 
 								<div class="container">
@@ -193,18 +179,21 @@
 														<td></td>
 														<td style="border-bottom: solid 4px #e4e4e4">9:00&ndash;16:00</td>
 														<td style="border-bottom: solid 4px #e4e4e4">16:00&ndash;20:00</td>
+														<td style="border-bottom: solid 4px #e4e4e4">Weekend</td>
 												</tr>
 												<tr>
 													<td>Individual sessions</td>
 													<td>60 min</td>
 													<td>50€</td>
 													<td>60€</td>
+													<td>60€</td>
 												</tr>
 												<tr>
 													<td>Couple’s session</td>
-													<td>120 min</td>
+													<td>90 min</td>
 													<td>100€</td>
 													<td>120€</td>
+													<td>—</td>
 												</tr>
 											</tbody>
 										</table>
@@ -235,7 +224,8 @@
 									<header class="major">
 										<h3>Contacts</h3>
 									</header>
-									<p>To schedule consultations, please firstly fill the <a href="https://forms.gle/5ubn9r4auj7psisR8">registration form</a>.</p>
+									<p>Consultations are held online (Eglė or Dominika) or face-to-face in Waalre (Dominika).</p>
+									<p>To schedule consultations, please fill the <a href="https://forms.gle/5ubn9r4auj7psisR8">registration form</a>.</p>
 									<p>For additional information, feel free to contact me via:</p>
 									<div class="row">
 										<div class="col-6 col-12-xsmall">
@@ -247,11 +237,7 @@
 													//-->
 												</script>
 											</li>
-											<li class="fa-phone standard"><a href="tel:+31640852197">+31 6 40 85 21 97 (best to send SMS)</a></li>
 										</ul>
-										</div>
-										<div class="col-6 col-12-xsmall">
-										<div id="mapid" style="height: 400px;"></div>
 										</div>
 									</div>
 								</div>
@@ -279,23 +265,5 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
-			<script>
-				var mymap = L.map('mapid').setView([51.4472, 5.4789], 15);
-
-				L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-					maxZoom: 18,
-					attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-					'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-					'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-					id: 'mapbox.streets'
-				}).addTo(mymap);
-
-				L.circle([51.4497, 5.478], 30, {
-					color: '#cb747c',
-					fillColor: '#cb747c',
-					fillOpacity: 0.5
-				}).addTo(mymap).bindPopup("We are here!").openPopup();
-			</script>
-
 	</body>
 </html>
